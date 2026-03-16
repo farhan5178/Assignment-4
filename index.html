@@ -1,11 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job|Tracker</title>
+    <!-- Daisy Cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- Daisy Theme -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+ <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+
+    <!-- navbar -->
+    <nav class="mb-5 w-full">
+         <div class="navbar  ">
+  <a class= "text-3xl font-bold">Job Application Tracker</a>
+
+</div>
+    </nav>
+    <!-- hero section -->
+    <section class=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-2">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm py-5">
+  <h2 class="mx-5">Total</h2>
+  <h2 class="text-2xl font-bold mx-5 text-black-900"><span id="total-job">8</span></h2>
+</div>
+  <div class="card w-96 bg-base-100 card-xs shadow-sm py-5">
+  <h2 class="mx-5">Interview</h2>
+  <h2 class="text-2xl font-bold mx-5 text-green-600"><span id="interview">0</span></h2>
+</div>
+  <div class="card w-96 bg-base-100 card-xs shadow-sm py-5">
+  <h2 class="mx-5"> Rejected</h2>
+  <h2 class="text-2xl font-bold mx-5 text-red-600"><span id="rejected">0</span></h2>
+</div>
+
+    </section>
+
+    <!--All Job section  -->
+    <section class= "mb-5 w-full gap-4 ">
+         <div class="navbar flex justify-between  ">
+  <a class="text-xl mb-4 font-bold">Available Jobs</a>
+<p class="text-neutral/50 mt-2">8 jobs</p>
+
+</div>
+<div class="button px-0 mb-4 ">
+    <button class="btn btn-primary btn-soft"> All</button>
+<button class="btn btn-primary btn-soft"> Interview</button>
+<button class="btn btn-primary btn-soft"> Rejected</button>
+</div>
+<!-- Card section -->
+<div class="space-y-4">
+    <div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">Mobile First Corp</h2>
+        <h3 class="text-neutral/50 text-xl">React Native Developer</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Remote • Full-time • $130,000 - $175,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="  card-title text-xl font-bold">FinSecure Ltd</h2>
+        <h3 class="text-neutral/50 text-lg">Financial Analyst</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Onsite • Full-time • $80,000 - $110,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Analyze financial data, prepare reports, and provide insights for strategic decision-making.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">HealthSync</h2>
+        <h3 class="text-neutral/50 text-lg">Healthcare Data Specialist</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Remote • Contract • $70,000 - $95,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Manage and analyze healthcare datasets to improve patient outcomes and operational efficiency.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">EduSpark</h2>
+        <h3 class="text-neutral/50 text-lg">Educational Consultant</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Hybrid • Part-time • $50,000 - $75,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Provide educational guidance and curriculum planning for schools and institutions.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">AutoDrive Tech</h2>
+        <h3 class="text-neutral/50 text-lg">Automotive Engineer</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Onsite • Full-time • $95,000 - $130,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Design and develop automotive systems, ensuring performance, safety, and efficiency.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">MediaWave</h2>
+        <h3 class="text-neutral/50 text-lg">Content Strategist</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Remote • Full-time • $60,000 - $85,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Plan, create, and manage digital content strategies to boost engagement and reach.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 7 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">TravelMate</h2>
+        <h3 class="text-neutral/50 text-lg">Tourism Coordinator</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Hybrid • Full-time • $55,000 - $70,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Coordinate travel programs and experiences, ensuring smooth logistics for clients.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 8 -->
+<div class="card w-full bg-base-100 card-xs shadow-sm p-4">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <div>
+        <h2 class="card-title text-xl font-bold">BuildSmart</h2>
+        <h3 class="text-neutral/50 text-lg">Civil Project Manager</h3>
+      </div>
+      <button aria-label="Delete" class="text-gray-400 hover:text-red-500">
+        <i class="fa-regular fa-trash-can"></i>
+      </button>
+    </div>
+
+    <p class="text-neutral/50 mt-2">Onsite • Full-time • $100,000 - $140,000</p>
+
+    <div class="mt-2">
+      <button class="btn">NOT APPLIED</button>
+      <p class="mt-2 text-base text-neutral">Manage civil construction projects from planning to execution, ensuring timely delivery.</p>
+    </div>
+
+    <div class="card-actions gap-2 mt-2">
+      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+    </section>
 </body>
 </html>
