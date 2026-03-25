@@ -46,12 +46,12 @@
 
 </div>
 <div class="button px-0 mb-4 ">
-    <button class="btn btn-primary btn-soft"> All</button>
-<button class="btn btn-primary btn-soft"> Interview</button>
-<button class="btn btn-primary btn-soft"> Rejected</button>
+    <button  id="all-btn" class="btn btn-primary btn-soft"> All</button>
+<button id="filter-interview" class="btn btn-primary btn-soft"> Interview</button>
+<button  id="filter-rejected" class="btn btn-primary btn-soft"> Rejected</button>
 </div>
 <!-- Card section -->
-<div class="space-y-4">
+<div id="job-container" class="space-y-4">
     <div class="card w-full bg-base-100 card-xs shadow-sm p-4">
   <div class="card-body">
     <div class="flex justify-between items-start">
@@ -67,12 +67,12 @@
     <p class="text-neutral/50 mt-2">Remote • Full-time • $130,000 - $175,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -94,12 +94,12 @@
     <p class="text-neutral/50 mt-2">Onsite • Full-time • $80,000 - $110,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Analyze financial data, prepare reports, and provide insights for strategic decision-making.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -121,12 +121,12 @@
     <p class="text-neutral/50 mt-2">Remote • Contract • $70,000 - $95,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Manage and analyze healthcare datasets to improve patient outcomes and operational efficiency.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -148,12 +148,12 @@
     <p class="text-neutral/50 mt-2">Hybrid • Part-time • $50,000 - $75,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Provide educational guidance and curriculum planning for schools and institutions.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -175,12 +175,12 @@
     <p class="text-neutral/50 mt-2">Onsite • Full-time • $95,000 - $130,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Design and develop automotive systems, ensuring performance, safety, and efficiency.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -202,12 +202,12 @@
     <p class="text-neutral/50 mt-2">Remote • Full-time • $60,000 - $85,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Plan, create, and manage digital content strategies to boost engagement and reach.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -229,12 +229,12 @@
     <p class="text-neutral/50 mt-2">Hybrid • Full-time • $55,000 - $70,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Coordinate travel programs and experiences, ensuring smooth logistics for clients.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -256,12 +256,12 @@
     <p class="text-neutral/50 mt-2">Onsite • Full-time • $100,000 - $140,000</p>
 
     <div class="mt-2">
-      <button class="btn">NOT APPLIED</button>
+      <button class="btn status-btn">NOT APPLIED</button>
       <p class="mt-2 text-base text-neutral">Manage civil construction projects from planning to execution, ensuring timely delivery.</p>
     </div>
 
     <div class="card-actions gap-2 mt-2">
-      <button class="btn text-green-500 bg-green-50">INTERVIEW</button>
+      <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
       <button class="btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
@@ -271,5 +271,9 @@
 
 
     </section>
+
+
+    <script src="./Scripts/button.js"></script>
+    <script src="./Scripts/machine.js"></script>
 </body>
 </html>
