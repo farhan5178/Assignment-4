@@ -12,10 +12,10 @@
  <!-- font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="w-11/12 mx-auto">
 
     <!-- navbar -->
-    <nav class="mb-5 w-full">
+    <nav class="mb-5">
          <div class="navbar  ">
   <a class= "text-3xl font-bold">Job Application Tracker</a>
 
@@ -23,7 +23,7 @@
     </nav>
     <!-- hero section -->
     <section class=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-2">
-        <div class="card w-96 bg-base-100 card-xs shadow-sm py-5">
+        <div class="card w-96 bg-base-100 card-xs shadow-sm py-5 mx-auto">
   <h2 class="mx-5">Total</h2>
   <h2 class="text-2xl font-bold mx-5 text-black-900"><span id="total-job">8</span></h2>
 </div>
@@ -42,7 +42,7 @@
     <section class= "mb-5 w-full gap-4 ">
          <div class="navbar flex justify-between  ">
   <a class="text-xl mb-4 font-bold">Available Jobs</a>
-<p class="text-neutral/50 mt-2">8 jobs</p>
+<p id="job-count"  class="text-neutral/50 mt-2">8 jobs</p>
 
 </div>
 <div class="button px-0 mb-4 ">
@@ -73,7 +73,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -100,7 +100,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -127,7 +127,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -154,7 +154,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -181,7 +181,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -208,7 +208,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -235,7 +235,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -262,7 +262,7 @@
 
     <div class="card-actions gap-2 mt-2">
       <button class="btn interview-btn text-green-500 bg-green-50">INTERVIEW</button>
-      <button class="btn text-red-500 bg-red-50">REJECTED</button>
+      <button class="btn rejected-btn text-red-500 bg-red-50">REJECTED</button>
     </div>
   </div>
 </div>
@@ -270,7 +270,20 @@
 
 
 
+<!-- Empty state -->
+<div id="empty-state" class="text-center mt-10 hidden">
+  <img src="/assets/jobs.png" class="w-25 mx-auto mb-3" />
+  <h2 class="text-xl font-bold">No Jobs Available</h2>
+  <p class="text-neutral/50">check back soon for new job opportunity</p>
+</div>
+
+
+
     </section>
+
+   <footer class="flex justify-center py-4">
+  <p>All rights reserved by ph-assignment-4</p>
+</footer>
 
 
     <script src="./Scripts/button.js"></script>
